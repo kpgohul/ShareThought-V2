@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { RouterProvider } from "react-router-dom";
 import { createRouter } from "./routes/router.tsx";
-import { useAuth } from "./providers/AuthProvider.tsx";
+import { useAuth } from "./hooks/useAuth.ts";
 
 const App = () => {
   const { isAuthenticated } = useAuth();

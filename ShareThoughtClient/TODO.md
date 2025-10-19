@@ -1,0 +1,2 @@
+- [x] Modify Layout.tsx to conditionally render Navbar only when not on login or register pages
+- [ ] Test the changes by running the application
