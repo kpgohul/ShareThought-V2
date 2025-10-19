@@ -1,0 +1,60 @@
+# ========== Java ==========
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+
+# Maven / Gradle
+target/
+build/
+.gradle/
+!gradle-wrapper.jar
+out/
+*.log
+
+# Dependency directories
+/.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+/node_modules/
+
+# ========== Spring Boot ==========
+# Generated files
+spring.log
+application*.properties
+application*.yml
+
+# ========== IDEs ==========
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# ========== OS ==========
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ========== Others ==========
+# Temporary files
+*.tmp
+*.swp
+*.bak
