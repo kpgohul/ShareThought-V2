@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: AuthServer
+
+  datasource:
+    url: jdbc:postgresql://${DATABASE_HOST:localhost}:${DATABASE_PORT:5432}/${DATABASE_NAME:auth_account}
+    username: kprahul143
+    password: kprahul143
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 1
+
+  sql:
+    init:
+      mode: embedded
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+logging:
+  level:
+    root: INFO
+    com.sharethought: INFO
+  pattern:
+    console: ${LOGPATTERN_CONSOLE:%green(%d{HH:mm:ss.SSS}) %blue(%-5level) %red([%thread]) %yellow(%logger{15}) - %msg%n}
+
+server:
+  port: 8090
